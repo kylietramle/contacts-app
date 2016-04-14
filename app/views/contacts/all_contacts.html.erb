@@ -1,8 +1,18 @@
 <h1>All Contacts</h1>
 
-<% @all_contacts.each do |contact| %>
-  <p>First Name: <%=contact.first_name%></p>
-  <p>Last Name: <%=contact.last_name%></p>
-  <p>Email: <%=contact.email%></p>
-  <p>Phone: <%=contact.phone_number%></p>
-<% end %>
+<table>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email</th>
+    <th>Phone Number</th>
+  </tr>
+  <% @all_contacts.each do |contact| %>
+  <tr>
+    <td><%=contact.first_name%></td>
+    <td><%=contact.last_name%></td>
+    <td><%=contact.email%></td>
+    <td><%=contact.phone_number%></td>
+  </tr>
+  <% end %>
+</table>
