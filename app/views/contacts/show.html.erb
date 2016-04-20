@@ -1,9 +1,12 @@
 <h1><%=@contact.first_name%></h1>
 
-<p>First Name: <%=@contact.first_name%></p>
-<p>Last Name: <%=@contact.last_name%></p>
+<p>Name: <%=@contact.full_name%></p>
 <p>Email: <%=@contact.email%></p>
 <p>Phone: <%=@contact.phone_number%></p>
+<p>Address: Latitude: <%= @coordinates[0]%>, Longitude: <%= @coordinates[1]%></p>
+<p>Bio: <%=@contact.bio%></p>
+<p>Japan Country Code: <%=@contact.japan_number%></p>
+<p>Updated: <%=@contact.updated_time%></p>
 
 
 <%= link_to "Home", "/contacts"%>

@@ -1,0 +1,20 @@
+<h1>All Johns</h1>
+
+<table class = "table">
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email</th>
+    <th>Phone Number</th>
+    <th>Japan Country Code</th>
+  </tr>
+  <% @johns.each do |john| %>
+  <tr>
+    <td><%= john.first_name %></td>
+    <td><%= john.last_name %></td>
+    <td><%= john.email %></td>
+    <td><%= john.phone_number %></td>
+    <td><%= john.japan_number %></td>
+  </tr>
+  <% end %>
+</table>

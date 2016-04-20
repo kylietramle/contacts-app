@@ -28,6 +28,8 @@ gem 'faker'
 # Allows you to create seed data files from the existing data in your database
 gem 'seed_dump'
 
+gem 'geocoder'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
